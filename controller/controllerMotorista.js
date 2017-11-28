@@ -4,6 +4,32 @@ var axios = require('axios'),
     request = require('request');
 
 //[GET]
+exports.getAll = (req, res) => {
+    console.log(req.params);
+    
+    request.get({
+        uri: config.crudURL+'/',
+        method: 'get',
+        headers: {
+            "Content-Type": "application/json"
+        },
+        json: true
+    }, (err, data) => {
+        if(err) res.status(500).send({ err: err, message: 'Erro interno do sistema.' });
+        else{
+
+            if(data.statusCode != 200) res.status(500).send(data.body);
+            else {
+                
+                console.log(data.body);
+                res.status(200).send(data.body);
+
+            }
+
+        }
+    });
+}
+
 exports.getByEmail = (req, res) => {
     console.log(req.params);
     
