@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/renatodms/yara-motorista-crud.git"
+    "url": "git+https://github.com/renatodms/yara-motorista-back.git"
   },
   "author": "renatodeyvson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/renatodms/yara-motorista-crud/issues"
+    "url": "https://github.com/renatodms/yara-motorista-back/issues"
   },
-  "homepage": "https://github.com/renatodms/yara-motorista-crud#readme",
+  "homepage": "https://github.com/renatodms/yara-motorista-back#readme",
   "dependencies": {
     "axios": "^0.17.1",
     "body-parser": "^1.18.2",
