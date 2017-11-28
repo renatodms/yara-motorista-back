@@ -8,7 +8,7 @@ app.use(bodyParser.json({ type: 'application/json' }));
 require('./router.js')(app);
 
 //listen
-var port = process.env.PORT || 6667;
+var port = process.env.PORT || 8881;
 http.listen(port, () => {
     console.log('BACK');
     console.log('port: %d', port);

@@ -1,3 +1,3 @@
 module.exports = {
-    crudURL: 'http://localhost:7666'
+    crudURL: 'http://localhost:8880'
 }
